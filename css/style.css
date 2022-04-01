@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #1eb8df;
+  --second-color: rgba(41, 112, 153, 0.836);
+  --third-color: #e1f0f7;
+}
+
+p::selection {
+  background-color: rgba(28, 84, 116, 0.836);
+  color: white;
+}
+
+#basic_background{
+  background: var(--main-color);
+  padding: 10vh 20vh;
+}
+
+#wrapper{
+  margin: 0 auto;
+  border-radius: 50px;
+  background: white;
+  padding: 5vh;
+}
+
+/*윗구간*/
+.main_bar_section {
+  margin: 0 auto;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+}
+
+/*상단 메뉴*/
+/*로고,메인메뉴,검색창을 감싼다*/
+.main_bar {
+  background-color: var(--main-color);
+  border-radius: 40px;
+  margin: 30px 0px;
+  height: 60px;
+  width: 100%;
+  /*로고,메뉴,검색창 위치 정렬*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /*자식 요소의  position을  absolute로 설정하기 위해 필요*/
+}
+
+/*로고*/
+.logo img {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  height: 25px;
+  width: auto;
+}
+
+/*메인메뉴*/
+.main_bar > nav {
+  /* background-color: black; */
+  height: 40px;
+  width: 70%;
+  /*각각의 메뉴 a링크들 정렬.*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_bar > nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 17px;
+  font-size: 15px;
+  font-weight: normal;
+  position: relative; /*이게 왜 필요할까?*/
+}
+
+.main_bar > nav a:hover {
+  font-weight: 900; /*오류 - 도시 메뉴에 커서 올리면 글자가 찌그러지는 현상있음.*/
+}
+
+.main_bar > nav a::after {
+  /* ::after는 실제 내용 바로 뒤에서 생성되는 자식요소 */
+  /*메뉴에 커서를 올렸을때 밑줄 효과*/
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /*이부분이 바뀜*/
+  height: 10px;
+  transform: translateX(17px);
+  background: #17749938;
+  transition: all 0.5s ease;
+}
+
+.main_bar > nav a:hover::after {
+  width: calc(100% - 24px); /*이렇게 바뀜*/
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*중간구간*/
+.container {
+  /* background-color: rgba(136, 173, 98, 0.137); */
+  width: 100%;
+  height: 100%;
+  /* margin-right: 20px; */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /*miidle_left의 position때문에 필요*/
+}
+/*중간 왼쪽 구간 : 사이드바 있는 구간*/
+.container > div:nth-child(1) {
+  /* background-color: rgba(0, 0, 0, 0.329); */
+  height: auto;
+  width: 75px;
+}
+
+/*왼쪽 사이드 바*/
+.side_bar {
+  background-color: var(--second-color);
+  border-radius: 30px;
+  height: 550px;
+  width: 65px;
+  position: sticky;
+  top: 150px; /*이 위치에서 sticky*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*사이드바 아이콘 메뉴들*/
+.side_bar nav a {
+  /* background-color: rgb(190, 39, 39); */
+  color: white;
+  font-size: 25px;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 45px 0;
+  text-decoration: none;
+}
+
+.side_bar nav a:hover {
+  color: rgba(0, 0, 0, 0.486);
+  font-size: 30px;
+}
+
+/*------------------------------------------------*/
+/*중간 오른쪽 구간: 메인이미지,메인리뷰,메인키워드 ..... 있는구간*/
+.container > div:nth-child(2) {
+  /* background-color: rgb(255, 127, 80); */
+  width: 1100px;
+  height: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*메인이미지와 메인리뷰를 감쌈*/
+.main_top {
+  display: flex;
+  width: 1055px;
+  /* background-color: black; */
+}
+/* 메인이미지 -> main_slide.css 대체
+.main_img {
+  background-color: var(--third-color);
+  height: 400px;
+  width: 750px;
+  border-radius: 25px;
+  margin: 5px 25px 0 0;
+} */
+/*메인리뷰 - 작성자의 프로필 + 메인리뷰 내용*/
+.main_review {
+  background-color: var(--third-color);
+  height: 400px;
+  width: 280px;
+  border-radius: 25px;
+  margin: 5px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*메인리뷰 작성자의 프로필 - outside*/
+.main_review a:nth-child(1) {
+  /* background-color: blueviolet; */
+  text-decoration: none;
+  color: black;
+  height: 15%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(148, 148, 148, 0.288);
+  margin-top: 25px;
+  padding-bottom: 10px;
+}
+/*메인리뷰 작성자의 프로필 - inside*/
+.m_re_profile {
+  /* background-color: thistle; */
+  height: 98%;
+  width: 98%;
+  display: flex;
+  align-items: center;
+}
+/*프로필 이미지*/
+.m_re_profile div:nth-child(1) {
+  background-color: grey;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  margin: 0 15px 0 5px;
+}
+/*프로필 이름*/
+.m_re_profile div:nth-child(2) {
+  /* background-color: green; */
+  height: 50px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+}
+/*메인리뷰 내용-outside*/
+.main_review a:nth-child(2) {
+  text-decoration: none;
+  color: black;
+  height: 70%;
+  width: 90%;
+  display: flex;
+  margin: 20px 0;
+}
+/*메인리뷰 내용-inside*/
+.main_review a:nth-child(2) > div {
+  /* background-color: turquoise; */
+  height: 98%;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_review a:nth-child(1) > div:hover,
+.main_review a:nth-child(2) > div:hover {
+  background-color: rgba(0, 0, 0, 0.089);
+  border-radius: 13px;
+}
+/*메인리뷰 제목*/
+.m_re_title {
+  /* background-color: wheat; */
+  width: 90%;
+  margin: 5px;
+  margin-bottom: 8px;
+  font-size: 19px;
+  font-weight: 600;
+}
+/*메인리뷰 내용*/
+.m_re_content {
+  /* background-color: skyblue; */
+  width: 90%;
+  height: 80%;
+  margin: 5px;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+/*------------------------------------------------*/
+/*메인에 보이는 키워드들을 감쌈*/
+.main_keyword {
+  /* background-color: darkblue; */
+  width: 1055px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/*메인 키워드*/
+.main_keyword a {
+  text-decoration: none;
+}
+
+.main_keyword a div {
+  background-color: var(--third-color);
+  height: 50px;
+  width: 150px;
+  border-radius: 22px;
+  margin: 0 0px;
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(30, 101, 158);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15.5px;
+}
+.main_keyword a div:hover {
+  background-color: var(--second-color);
+  color: white;
+  font-size: 16px;
+}

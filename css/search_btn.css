@@ -1,0 +1,72 @@
+/*검색창에 커서올리기 전, 돋보기 모양*/
+.search-box {
+  position: absolute;
+  top: 15px;
+  right: 70px;
+  /* transform: translate(-30%, -50%); */
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.search-box:hover {
+  box-shadow: 0px 0px 0.5px 1px rgba(255, 255, 255, 0.288);
+  background-color: rgba(255, 255, 255, 0.479);
+  margin: 0 -3% 0 0; /**이부분 수정 필요 : 화면이 클때 부자연스러움 */
+  width: 20%;
+}
+
+/*검색버튼*/
+.search-box > a {
+  text-decoration: none;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/*검색버튼의 이미지*/
+.search-box > a > img {
+  width: auto;
+  height: 25px;
+}
+/*커서 올린후 검색버튼*/
+.search-box:hover > a {
+  background-color: rgba(0, 0, 0, 0.281);
+}
+/*커서 올린후 검색버튼의 이미지*/
+.search-box:hover > a img {
+  width: auto;
+  height: 15px;
+}
+/*검색창*/
+.search-box input {
+  /*텍스트가 입력되어 있으면 search-box:hover의 상태가 지속되도록 하는 방법을 생각해보기. */
+  display: flex;
+  float: left;
+  padding: 0;
+  width: 0px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1rem;
+  line-height: 30px;
+  transition: 0.4s;
+  color: rgb(0, 0, 0);
+}
+
+.search-box input::placeholder {
+  color: rgba(0, 0, 0, 0.445);
+}
+/*커서 올린후 검색창*/
+.search-box:hover > input {
+  width: calc(
+    100% - 45px
+  ); /* 커서를 올리자마자 클릭하면 바로 typing 가능하게 함. search_box의 width - search-btn 의 width를 함.*/
+  padding: 0 6px;
+}
