@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main_sub_style.css">
     <link rel="stylesheet" href="css/style.css">
@@ -19,254 +20,279 @@
 </head>
 
 <body>
-<div id="basic_background">
-    <!-- section태그는 영역구분을 위해 사용 -->
-    <div id="wrapper">
-        <!--윗구간-->
-        <header class="main_bar_section"> 
-            <!-- 메인 메뉴 -->
-            <div class="main_bar"> <!--로고, 메인메뉴, 검색창을 감싼다.-->
-                <a class="logo" href="" title="여가 메인페이지"><img src="img/common/logo.png" alt=""></a> <!--로고 이미지-->
-                <nav> <!--메뉴-->
-                    <a href="">MAIN</a>
-                    <a href="">스토리</a>
-                    <a href="">도시</a>
-                    <a href="">호텔&민박</a>
-                    <a href="">기본서비스</a>
-                    <a href="">후기</a>
-                </nav>
-                <div class="search-box"> <!--검색-->
-                    <input type="text" name="" placeholder="Type to search">
-                    <a href="#"><img src="img/common/search_icon2.png" alt=""></a>
-                </div>
-            </div> 
-        </header>
-        <!--------------------------------------------------------------------------------------------------------------------------->
-        <!--중간 구간-->
-        <section class="container">
-            <!--중간 왼쪽 구간 : 사이드바 있는 구간-->
-            <div>
-                <!--왼쪽 사이드 바-->
-                <div class="side_bar">
+    <div id="basic_background">
+        <!-- section태그는 영역구분을 위해 사용 -->
+        <div id="wrapper">
+            <!--윗구간-->
+            <header class="main_bar_section">
+                <!-- 메인 메뉴 -->
+                <div class="main_bar">
+                    <!--로고, 메인메뉴, 검색창을 감싼다.-->
+                    <a class="logo" href="" title="여가 메인페이지"><img src="img/common/logo.png" alt=""></a>
+                    <!--로고 이미지-->
                     <nav>
-                        <a href=""><i class="far fa-comment-alt"></i></a>
-                        <a href=""><i class="fas fa-phone-alt"></i></a>
-                        <a href=""><i class="fas fa-envelope"></i></a>
-                        <a href=""><i class="far fa-user-circle"></i></a>
-                        <a href=""><i class="fas fa-cog"></i></a>
-                        <a href=""><i class="far fa-bell"></i></a>
+                        <!--메뉴-->
+                        <a href="">MAIN</a>
+                        <a href="">스토리</a>
+                        <a href="">도시</a>
+                        <a href="">호텔&민박</a>
+                        <a href="">기본서비스</a>
+                        <a href="">후기</a>
                     </nav>
-                </div>
-            </div>
-            <!-- 중간 오른쪽 구간 : 메인이미지,메인리뷰,키워드 ....-->
-            <div>
-                <div class="main_top"><!--메인이미지와 메인리뷰를 감쌈-->
-                    <!--메인 이미지 슬라이드-->
-                    <div class="slide_wrap">
-                        <div class="slide_box">
-                          <div class="slide_list clearfix">
-                            <div class="slide_content slide01">
-                              <!-- <p>1</p> -->
-                            </div>
-                            <div class="slide_content slide02">
-                              <!-- <p>2</p> -->
-                            </div>
-                            <div class="slide_content slide03">
-                              <!-- <p>3</p> -->
-                            </div>
-                          </div>
-                          <!-- // .slide_list -->
-                        </div>
-                        <!-- // .slide_box -->
-                        <div class="slide_btn_box">
-                          <button type="button" class="slide_btn_prev">Prev</button>
-                          <button type="button" class="slide_btn_next">Next</button>
-                        </div>
-                        <!-- // .slide_btn_box -->
-                        <ul class="slide_pagination"></ul>
-                        <!-- // .slide_pagination -->
+                    <div class="search-box">
+                        <!--검색-->
+                        <input type="text" name="" placeholder="Type to search">
+                        <a href="#"><img src="img/common/search_icon2.png" alt=""></a>
                     </div>
-                    <!-- // .slide_wrap -->
+                </div>
+            </header>
+            <!--------------------------------------------------------------------------------------------------------------------------->
+            <!--중간 구간-->
+            <section class="container">
+                <!--중간 왼쪽 구간 : 사이드바 있는 구간-->
+                <div>
+                    <!--왼쪽 사이드 바-->
+                    <div class="side_bar">
+                        <nav>
+                            <a href=""><i class="far fa-comment-alt"></i></a>
+                            <a href=""><i class="fas fa-phone-alt"></i></a>
+                            <a href=""><i class="fas fa-envelope"></i></a>
+                            <a href=""><i class="far fa-user-circle"></i></a>
+                            <a href=""><i class="fas fa-cog"></i></a>
+                            <a href=""><i class="far fa-bell"></i></a>
+                        </nav>
+                    </div>
+                </div>
+                <!-- 중간 오른쪽 구간 : 메인이미지,메인리뷰,키워드 ....-->
+                <div class="main-screen">
+                    <div class="main_top">
+                        <!--메인이미지와 메인리뷰를 감쌈-->
+                        <!--메인 이미지 슬라이드-->
+                        <div class="slide_wrap">
+                            <div class="slide_box">
+                                <div class="slide_list clearfix">
+                                    <div class="slide_content slide01">
+                                        <!-- <p>1</p> -->
+                                    </div>
+                                    <div class="slide_content slide02">
+                                        <!-- <p>2</p> -->
+                                    </div>
+                                    <div class="slide_content slide03">
+                                        <!-- <p>3</p> -->
+                                    </div>
+                                </div>
+                                <!-- // .slide_list -->
+                            </div>
+                            <!-- // .slide_box -->
+                            <div class="slide_btn_box">
+                                <button type="button" class="slide_btn_prev">Prev</button>
+                                <button type="button" class="slide_btn_next">Next</button>
+                            </div>
+                            <!-- // .slide_btn_box -->
+                            <ul class="slide_pagination"></ul>
+                            <!-- // .slide_pagination -->
+                        </div>
+                        <!-- // .slide_wrap -->
 
-                    <!--메인리뷰-->
-                    <div class="main_review"><!--메인리뷰 작성자의 프로필 + 메인리뷰 내용-->
-                        <a href="" title="작성자 블로그 바로가기"> <!--메인 리뷰 작성자 프로필-->
-                            <div class="m_re_profile">
-                                <div><img src="" alt=""></div> <!--프로필 이미지-->
-                                <div>리뷰작성자 프로필이름</div>  <!--프로필 이름-->
-                            </div>
+                        <!--메인리뷰-->
+                        <div class="main_review">
+                            <!--메인리뷰 작성자의 프로필 + 메인리뷰 내용-->
+                            <a href="" title="작성자 블로그 바로가기">
+                                <!--메인 리뷰 작성자 프로필-->
+                                <div class="m_re_profile">
+                                    <div><img src="" alt=""></div>
+                                    <!--프로필 이미지-->
+                                    <div>리뷰작성자 프로필이름</div>
+                                    <!--프로필 이름-->
+                                </div>
+                            </a>
+                            <a href="" title="리뷰 자세히 보기">
+                                <!--메인 리뷰 내용-->
+                                <div>
+                                    <div class="m_re_title">리뷰제목</div>
+                                    <!--메인리뷰제목-->
+                                    <p class="m_re_content">리뷰내용</p>
+                                    <!--메인리뷰내용-->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_keyword">
+                        <!--메인에 보이는 키워드들을 감쌈-->
+                        <a href="">
+                            <div>#키워드1</div>
                         </a>
-                        <a href="" title="리뷰 자세히 보기"><!--메인 리뷰 내용-->
-                            <div>
-                                <div class="m_re_title">리뷰제목</div><!--메인리뷰제목-->
-                                <p class="m_re_content">리뷰내용</p><!--메인리뷰내용-->
-                            </div>
+                        <a href="">
+                            <div>#키워드2</div>
+                        </a>
+                        <a href="">
+                            <div>#키워드3</div>
+                        </a>
+                        <a href="">
+                            <div>#키워드4</div>
+                        </a>
+                        <a href="">
+                            <div>#키워드5</div>
+                        </a>
+                        <a href="">
+                            <div>#키워드6</div>
                         </a>
                     </div>
-                </div>
-                <div class="main_keyword"> <!--메인에 보이는 키워드들을 감쌈-->
-                    <a href=""><div>#키워드1</div></a>
-                    <a href=""><div>#키워드2</div></a>
-                    <a href=""><div>#키워드3</div></a>
-                    <a href=""><div>#키워드4</div></a>
-                    <a href=""><div>#키워드5</div></a>
-                    <a href=""><div>#키워드6</div></a>
-                </div>
-                <!---->
-                <!-- section태그는 영역구분을 위해 사용 -->
-                
+                    <!---->
+                    <!-- section태그는 영역구분을 위해 사용 -->
+
                     <!-- filter section -->
-                <section class="subfilter_section">
-                    <nav class="nav">
-                        <!-- gnb / subnb 중 sub navigation bar(subnb)-->
-                        <ul class="subnb">
-                            <li><a href="#">HOT도시</a></li>
-                            <li class=""><a href="#">베스트후기</a></li>
-                            <li><a href="#">추천현지인</a></li>
-                            <li><a href="#">추천숙소</a></li>
-                            <li><a href="#">이용안내</a></li>
-                            <div class="sub_filter"><a href="#"><img src="img/icon/filter.png" alt=""></a></div>
-                            <!-- <li class="sub_filter"><a href="#">icon</a><span>하위토글버튼</span></li> -->
-                        </ul>
-                </section>
-                <!-- product section -->
-                <section class="product_section">
-                    <!-- <span class="prev_btn"><img src="img/icon/previous.png" alt=""></span> -->
-                    <!-- 내용물 -->
-                    <article>
-                        <div>
-                            <img src="img/image/review1.jpg" alt="">
-                            <!-- <div class="review_profile">
+                    <section class="subfilter_section">
+                        <nav class="nav">
+                            <!-- gnb / subnb 중 sub navigation bar(subnb)-->
+                            <ul class="subnb">
+                                <li><a href="#">HOT도시</a></li>
+                                <li class=""><a href="#">베스트후기</a></li>
+                                <li><a href="#">추천현지인</a></li>
+                                <li><a href="#">추천숙소</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <div class="sub_filter"><a href="#"><img src="img/icon/filter.png" alt=""></a></div>
+                                <!-- <li class="sub_filter"><a href="#">icon</a><span>하위토글버튼</span></li> -->
+                            </ul>
+                    </section>
+                    <!-- product section -->
+                    <section class="product_section">
+                        <!-- <span class="prev_btn"><img src="img/icon/previous.png" alt=""></span> -->
+                        <!-- 내용물 -->
+                        <article>
+                            <div>
+                                <img src="img/image/review1.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review2.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review2.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review3.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review3.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review4.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review4.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review5.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review5.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review6.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review6.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review7.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review7.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review8.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review8.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review8.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review8.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review9.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review9.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review6.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review6.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    <article>
-                        <div>
-                            <img src="img/image/review7.jpg" alt="">
-                            <!-- <div class="review_profile">
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img src="img/image/review7.jpg" alt="">
+                                <!-- <div class="review_profile">
                                 <img src="img/icon/profile.png" alt="">
                             </div> -->
-                            <span>삼척 가볼만한 곳</span>
-                        </div>
-                    </article>
-                    
-                    
-                    <!-- <span class="next_btn"><img src="img/icon/next.png" alt=""></span> -->
-                </section>
-                <!-- <section class="more">더보기</section> -->
-            </div>
-                
-                    
-        
-        </section>
-        <!-- footer -->
-        <footer id="footer">
-            <img src="img/common/footer_logo.png" alt="여가 icon">
-            <nav>
-                <ul class="footer_nav">    
-                    <li><a href="#">이벤트</a></li>
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">약관</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contect</a></li>
-                </ul>
-            </nav>
-            <p>Copyright &copy; 2021.여가 블라블라</p>
-        </footer>
+                                <span>삼척 가볼만한 곳</span>
+                            </div>
+                        </article>
+
+
+                        <!-- <span class="next_btn"><img src="img/icon/next.png" alt=""></span> -->
+                    </section>
+                    <!-- <section class="more">더보기</section> -->
+                </div>
+
+
+
+            </section>
+            <!-- footer -->
+            <footer id="footer">
+                <img src="img/common/footer_logo.png" alt="여가 icon">
+                <nav>
+                    <ul class="footer_nav">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">약관</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contect</a></li>
+                    </ul>
+                </nav>
+                <p>Copyright &copy; 2021.여가 블라블라</p>
+            </footer>
+        </div>
     </div>
-</div>
 </body>
 
 </html>
