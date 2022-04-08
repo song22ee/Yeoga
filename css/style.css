@@ -1,8 +1,17 @@
 @import url(account.css);
+@import url(reset.css);
+@import url(main_sub_style.css);
+@import url(search_btn.css);
+@import url(main_slide.css);
 
 * {
     margin: 0;
     padding: 0;
+}
+
+#iframe__container {
+    width: 1100px;
+    height: 2000px;
 }
 
 :root {
@@ -113,8 +122,8 @@ p::selection {
     height: 100%;
     /* margin-right: 20px; */
     display: flex;
-    justify-content: space-between;
     position: relative;
+    justify-content: space-between;
     /*miidle_left의 position때문에 필요*/
 }
 /*중간 왼쪽 구간 : 사이드바 있는 구간*/
@@ -139,7 +148,7 @@ p::selection {
 }
 
 /*사이드바 아이콘 메뉴들*/
-.side_bar nav a {
+.side_bar nav i {
     /* background-color: rgb(190, 39, 39); */
     color: white;
     font-size: 25px;
@@ -162,7 +171,7 @@ p::selection {
 /*중간 오른쪽 구간: 메인이미지,메인리뷰,메인키워드 ..... 있는구간*/
 .main-screen {
     /* background-color: rgb(255, 127, 80); */
-    width: 1100px;
+    width: 100%;
     height: auto;
     z-index: 1;
     display: flex;

@@ -1,0 +1,110 @@
+<!--왼쪽 사이드 바 - 계정
+    : 조회(아이디로), 입력, 수정, 삭제-->
+​
+<!DOCTYPE html>
+<html lang="en">
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    ​
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/account.js"></script>
+
+
+    <title>여가-계정</title>
+</head>
+​
+
+<body>
+    <div class="main-screen">
+        <div class="account-main-screen">
+            <h2 class="account-header">회원가입</h2>
+            <form action="" method="get" class="account-form">
+                <div class="account-form__row">
+                    <label for="member_id">아이디</label>
+                    <input class="member_id" name="member_id" type="text" placeholder="ID">
+                </div>
+                <div class="account-form__row">
+                    <label for="password">비밀번호</label>
+                    <input class="member_password" name="password" type="password" placeholder="PASSWORD">
+                </div>
+                <div class="account-form__row">
+                    <label for="name">이름</label>
+                    <input class="member_name" name="name" type="text" placeholder="NAME">
+                </div>
+                <div class="account-form__row">
+                    <label for="sex">성별</label>
+                    <div class="account-form__sex__checkbox">
+                        <div class="account-form__column">
+                            <input name="sex" value="M" type="radio" checked>
+                            <label for="man">남</label>
+                        </div>
+                        <div class="account-form__column">
+                            <input name="sex" value="F" type="radio">
+                            <label for="woman">여</label>
+                        </div>
+                        <div class="account-form__column">
+                            <input name="sex" value="U" type="radio">
+                            <label for="undisclosed">선택안함</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-form__row">
+                    <label for="national_code">국가</label>
+                    <select id="account_national_code" name="national_code" class="account-form__national_code">
+                        <option value="KR">한국</option>
+                        <option value="US">미국</option>
+                    </select>
+                </div>
+                <div class="account-form__row">
+                    <label for="mail_address">이메일 주소</label>
+                    <input class="member_mail_address" name="mail_address" type="email" placeholder="EMAIL">
+                </div>
+                <div class="account-form__row">
+                    <label for="paypal_id">페이팔 아이디</label>
+                    <input class="member_paypal_id" name="paypal_id" type="text" placeholder="PAYPAL ID">
+                </div>
+                <div class="account-form__row">
+                    <label for="phone_number">휴대폰 번호</label>
+                    <input class="member_phone_number" name="phone_number" type="tel" placeholder="PHONE NUMBER">
+                </div>
+                <div class="account-form__row">
+                    <label for="address1">기본 주소</label>
+                    <input class="member_address1" name="address1" type="text" placeholder="기본 주소">
+                </div>
+                <div class="account-form__row">
+                    <label for="address2">상세 주소</label>
+                    <input class="member_address2" name="address2" type="text" placeholder="상세 주소">
+                </div>
+                <div class="account-form__row account-form__profile_img">
+                    <label for="porfile_img">프로필 사진</label>
+                    <div class="profile_img__box">
+                        <input id="account-form__input-img" class="member_profile_img" name="profile_img" type="file">
+                        <img id="account-form__preview-img"
+                            src="https://dummyimage.com/500x500/ffffff/000000.png&text=preview+image" alt=""
+                            class="profile_img__preview-img">
+                    </div>
+                </div>
+
+                <div class="account-form__row account-form__submit-buttons">
+                    <input id="account_create" type="submit" value="등록" class="account-form__submit-button">
+                    <input id="account_read" type="submit" value="조회" class="account-form__submit-button">
+                    <input id="account_update" type="submit" value="수정" class="account-form__submit-button">
+                    <input id="account_delete" type="submit" value="삭제" class="account-form__submit-button">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="js/test.js"></script>
+</body>
+​
+
+</html>
